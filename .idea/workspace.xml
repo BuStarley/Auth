@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="695ef5e4-db1b-4fc4-b91f-33d46953448f" name="Changes" comment="Fix user-response">
+    <list default="true" id="695ef5e4-db1b-4fc4-b91f-33d46953448f" name="Changes" comment="End point #1">
+      <change afterPath="$PROJECT_DIR$/app/hasher.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.env" beforeDir="false" afterPath="$PROJECT_DIR$/config.env" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758004845032</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="End point #1">
+      <option name="closed" value="true" />
+      <created>1758012032657</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1758012032657</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -173,6 +180,7 @@
     <MESSAGE value="Fix &quot;from app.models import User&quot; -&gt; &quot;from models import User&quot;" />
     <MESSAGE value="Added module register in api.py" />
     <MESSAGE value="Fix user-response" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix user-response" />
+    <MESSAGE value="End point #1" />
+    <option name="LAST_COMMIT_MESSAGE" value="End point #1" />
   </component>
 </project>
