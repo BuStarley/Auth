@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="695ef5e4-db1b-4fc4-b91f-33d46953448f" name="Changes" comment="Update script main (added router (users))">
+    <list default="true" id="695ef5e4-db1b-4fc4-b91f-33d46953448f" name="Changes" comment="Fix &quot;from app.models import User&quot; -&gt; &quot;from models import User&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api.py" afterDir="false" />
     </list>
@@ -127,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758003516492</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Fix &quot;from app.models import User&quot; -&gt; &quot;from models import User&quot;">
+      <option name="closed" value="true" />
+      <created>1758004134983</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1758004134983</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -138,6 +146,7 @@
     <MESSAGE value="Added script main.py" />
     <MESSAGE value="Added script api.py (test)" />
     <MESSAGE value="Update script main (added router (users))" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update script main (added router (users))" />
+    <MESSAGE value="Fix &quot;from app.models import User&quot; -&gt; &quot;from models import User&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix &quot;from app.models import User&quot; -&gt; &quot;from models import User&quot;" />
   </component>
 </project>
