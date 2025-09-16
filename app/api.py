@@ -1,5 +1,4 @@
-from fastapi import APIRouter, Depends
-from schemas import UserCreate
+from fastapi import APIRouter
 from app.models import User
 
 router = APIRouter()
