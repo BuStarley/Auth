@@ -1,12 +1,19 @@
+from click import option
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, Text
 
 Base = declarative_base()
 
-class User(Base):
-    __tablename__ = 'user'
+class UserDB(Base):
+    __tablename__ = 'users'
 
     id = Column(Integer, primary_key=True)
     email = Column(String, unique=True)
     password = Column(String)
     name = Column(String)
+
+class PostDB(Base):
+    __tablename__ = 'posts'
+    id = Column(Integer, primary_key=True)
+    title = Column(String)
+    content = Column(Text)

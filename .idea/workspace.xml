@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="695ef5e4-db1b-4fc4-b91f-33d46953448f" name="Changes" comment="Fix &quot;from app.models import User&quot; -&gt; &quot;from models import User&quot;">
+    <list default="true" id="695ef5e4-db1b-4fc4-b91f-33d46953448f" name="Changes" comment="Fix user-response">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.env" beforeDir="false" afterPath="$PROJECT_DIR$/config.env" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +59,11 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Project\Git\Service\Auth" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -135,7 +143,23 @@
       <option name="project" value="LOCAL" />
       <updated>1758004134983</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added module register in api.py">
+      <option name="closed" value="true" />
+      <created>1758004532078</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1758004532078</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Fix user-response">
+      <option name="closed" value="true" />
+      <created>1758004845032</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1758004845032</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -147,6 +171,8 @@
     <MESSAGE value="Added script api.py (test)" />
     <MESSAGE value="Update script main (added router (users))" />
     <MESSAGE value="Fix &quot;from app.models import User&quot; -&gt; &quot;from models import User&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix &quot;from app.models import User&quot; -&gt; &quot;from models import User&quot;" />
+    <MESSAGE value="Added module register in api.py" />
+    <MESSAGE value="Fix user-response" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix user-response" />
   </component>
 </project>
