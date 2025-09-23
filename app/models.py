@@ -1,8 +1,5 @@
-from click import option
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import Column, Integer, String, Text
-
-Base = declarative_base()
+from database import  Base
+from sqlalchemy import Column, Integer, String
 
 class UserDB(Base):
     __tablename__ = 'users'
