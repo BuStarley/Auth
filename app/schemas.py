@@ -5,6 +5,11 @@ class UserCreate(BaseModel):
     password: str
     name: str
 
+class UserUpdate(BaseModel):
+    email: EmailStr
+    password: str
+    name: str
+
 class UserResponse(BaseModel):
     id: int
     email: EmailStr
@@ -12,3 +17,9 @@ class UserResponse(BaseModel):
 
     class Config:
         orm_mode = True
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str = 'Bearer'
+    refresh_token: str
+
