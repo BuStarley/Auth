@@ -4,12 +4,13 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class Config:
-    DB_HOST = os.getenv('DB_HOST')
-    DB_PORT = os.getenv('DB_PORT')
-    DB_NAME = os.getenv('DB_NAME')
-    DB_USER = os.getenv('DB_USER')
-    DB_PASSWORD = os.getenv('DB_PASSWORD')
-    DB_DRIVER = os.getenv('DB_DRIVER')
+    def __init__(self):
+        self.DB_HOST = os.getenv('DB_HOST', 'localhost')
+        self.DB_PORT = os.getenv('DB_PORT', '5432')
+        self.DB_NAME = os.getenv('DB_NAME', 'mydb')
+        self.DB_USER = os.getenv('DB_USER', 'postgres')
+        self.DB_PASSWORD = os.getenv('DB_PASSWORD', '13101')
+        self.DB_DRIVER = os.getenv('DB_DRIVER', 'postgresql+psycopg2')
 
     @property
     def DATABASE_URL(self) -> str:
