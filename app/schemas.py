@@ -1,4 +1,4 @@
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel, EmailStr, ConfigDict
 
 class UserRegister(BaseModel):
     email: EmailStr
@@ -15,15 +15,18 @@ class UserUpdate(BaseModel):
     name: str
 
 class UserResponse(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+
     id: int
     email: EmailStr
     name: str
 
-    class Config:
-        orm_mode = True
+    def __repr__(self):
+        return f"UserResponse(id={self.id}, email={self.email}, name={self.name})"
+
 
 class Token(BaseModel):
     access_token: str
     token_type: str = 'Bearer'
-    refresh_token: str
+    user: UserResponse
 

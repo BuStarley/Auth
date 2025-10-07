@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="695ef5e4-db1b-4fc4-b91f-33d46953448f" name="Changes" comment="UserApi -version 1.1">
-      <change afterPath="$PROJECT_DIR$/app/token.py" afterDir="false" />
+    <list default="true" id="695ef5e4-db1b-4fc4-b91f-33d46953448f" name="Changes" comment="Update api">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/database.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/schemas.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.env" beforeDir="false" afterPath="$PROJECT_DIR$/config.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/token.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/token.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/utest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/utest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,16 +50,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Project/Git/Service/Auth&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.Python tests in utest.py.executor": "Run",
+    "Python.api.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/Project/Git/Service/Auth"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Project\Git\Service\Auth" />
@@ -185,7 +186,31 @@
       <option name="project" value="LOCAL" />
       <updated>1758625545004</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Create jwt-token module">
+      <option name="closed" value="true" />
+      <created>1759517336636</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1759517336636</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Add jwt-token schema">
+      <option name="closed" value="true" />
+      <created>1759517362117</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1759517362117</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Update api">
+      <option name="closed" value="true" />
+      <created>1759517371686</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1759517371686</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -202,6 +227,9 @@
     <MESSAGE value="End point #1" />
     <MESSAGE value="Redux project" />
     <MESSAGE value="UserApi -version 1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="UserApi -version 1.0" />
+    <MESSAGE value="Create jwt-token module" />
+    <MESSAGE value="Add jwt-token schema" />
+    <MESSAGE value="Update api" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update api" />
   </component>
 </project>

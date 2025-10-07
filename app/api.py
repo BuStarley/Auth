@@ -1,22 +1,21 @@
 from fastapi import APIRouter, HTTPException, Depends
-from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from fastapi.security import OAuth2PasswordBearer
 from sqlalchemy.orm import Session
 from app.hasher import Hasher
 from app.database import get_db
 from app.models import UserDB
 from app.schemas import UserRegister, UserResponse, UserUpdate, UserLogin, Token
-from app.token import create_access_token, verify_token
+from app.token import create_access_token, verify_token, ACCESS_TOKEN_EXPIRE_MINUTES
 from datetime import timedelta
 
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="auth/login")
-ACCESS_TOKEN_EXPIRE_MINUTES = 30
 router = APIRouter()
 hasher = Hasher()
 
 
 @router.post("/auth/register", response_model=UserResponse)
-async def register_user(user_data: UserRegister, db: Session = Depends(get_db)):
+async def register(user_data: UserRegister, db: Session = Depends(get_db)):
     if db.query(UserDB).filter(UserDB.email == user_data.email).first():
         raise HTTPException(status_code=400, detail="Email already registered")
 
@@ -47,13 +46,19 @@ async def login(user_data: UserLogin, db: Session = Depends(get_db)):
         data={"sub": user.email, "user_id": user.id}, expires_delta=access_token_expires
     )
 
+    user_dict = UserResponse(
+        id=user.id,
+        email=user.email,
+        name=user.name
+    )
+
     return {
         "access_token": access_token,
         "token_type": "bearer",
-        "user": user
+        "user": user_dict
     }
 
-@router.get("/users", response_model=list[UserResponse])
+@router.get("/auth/users", response_model=list[UserResponse])
 async def get_users(db: Session = Depends(get_db)):
     return db.query(UserDB).all()
 
@@ -74,7 +79,7 @@ async def update_user(user_data: UserUpdate, id: int, db: Session = Depends(get_
     db.refresh(db_user)
     return db_user
 
-@router.get("/users/me", response_model=UserResponse)
+@router.get("/auth/me", response_model=UserResponse)
 async def read_users_me(token: str = Depends(oauth2_scheme), db: Session = Depends(get_db)):
     email = verify_token(token)
     user = db.query(UserDB).filter(UserDB.email == email).first()
